@@ -1,0 +1,8 @@
+extends basic-layout.pug 
+
+block content
+  each post in posts 
+    div.row.mb-3 
+      img(width="50" height="50").col.flex-grow-0.flex-shrink-0.rounded
+      div.col
+        a(href="/post/" + post.id)= post.title 

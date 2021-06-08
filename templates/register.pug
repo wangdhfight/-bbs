@@ -1,0 +1,12 @@
+extends basic-layout.pug 
+
+block content
+  form
+    .mb-3
+      label.form-label(for='exampleInputEmail1') Email address
+      input#exampleInputEmail1.form-control(type='email' name='email' aria-describedby='emailHelp')
+      #emailHelp.form-text We'll never share your email with anyone else.
+    .mb-3
+      label.form-label(for='exampleInputPassword1') Password
+      input#exampleInputPassword1.form-control(type='password' name='email')
+    button.btn.btn-primary(type='submit') Submit
